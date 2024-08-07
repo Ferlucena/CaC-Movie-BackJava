@@ -1,5 +1,7 @@
 package ar.com.code24101.dao;
 
+//TODO--> Cambiar a Singleton
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -7,7 +9,7 @@ public class AdministradorDeConexiones {
     //metodo estatico: Clase.metodo(); no es neceario crear un objeto
     //para usar el metodo
     public static Connection conectar() {
-        String url = "jdbc:mysql://localhost:33060/24101?serverTimeZone=UTC&userSSL=false";
+        String url = "jdbc:mysql://localhost:3306/24101?serverTimeZone=UTC&userSSL=false";
         String user = "root";//System.getenv("nombre_variable")
         String password = "secret";
         String driver = "com.mysql.cj.jdbc.Driver";
